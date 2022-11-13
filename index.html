@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <section>
+    <header>
+      <a href="#" class="logo">World</a>
+      <div class="toggle"></div>
+    </header>
+    <img src="bg.jpg" class="bg">
+    <img src="bird.png" class="bird">
+    <div class="content">
+      <h2>We can save The <br><span>Earth</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error laborum dolorum rerum, asperiores enim eius harum quibusdam perferendis velit, voluptates ab aut facilis vel unde commodi, sint delectus odit exercitationem.</p>
+      <a href="#">Join Us</a>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="facebook.png" alt=""></a></li>
+      <li><a href="#"><img src="twitter.png" alt=""></a></li>
+      <li><a href="#"><img src="instagram.png" alt=""></a></li>
+    </ul>
+    <div class="textBlocks">
+      <div class="block">
+        <h3>Defenders of Earth</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum nihil atque, perspiciatis placeat quos. Voluptatibus quod officia facere quisquam ipsum deleniti vero quibusdam esse aspernatur. Fugiat quaerat totam praesentium.</p>
+      </div>
+      <div class="block">
+        <h3>How to save Water</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum nihil atque, perspiciatis placeat quos. Voluptatibus quod officia facere quisquam ipsum deleniti vero quibusdam esse aspernatur. Fugiat quaerat totam praesentium.</p>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript">
+    document.addEventListener("mousemove", function(e){
+      const bg = document.querySelector('.bg')
+      const bird = document.querySelector('.bird')
+      const content = document.querySelector('.content')
+
+      bg.style.width = 100 + e.pageX/100 + '%';
+      bg.style.height = 100 + e.pageX/100 + '%';
+
+      bird.style.right = 100 + e.pageX/2 + 'px';
+
+      content.style.left = 100 + e.pageX/2.5 + 'px';
+    })
+  </script>
+</body>
+</html>
